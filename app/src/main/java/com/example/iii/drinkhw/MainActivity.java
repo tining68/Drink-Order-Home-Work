@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             int price=Integer.parseInt(spinner1.getSelectedItem().toString().substring(27,29));
             int count=Integer.parseInt(spinner4.getSelectedItem().toString());
             String TotalPrice= Integer.toString(price*count);
-            String msg=spinner1.getSelectedItem().toString()+","+spinner2.getSelectedItem().toString()+","+spinner3.getSelectedItem().toString()+","+spinner4.getSelectedItem().toString()+"杯";
+            String msg=spinner1.getSelectedItem().toString()+" ,"+spinner2.getSelectedItem().toString()+" ,"+spinner3.getSelectedItem().toString()+" ,"+spinner4.getSelectedItem().toString()+"杯";
 
             txtOrder.setText(msg+"\r\n"+"\r\n價錢："+TotalPrice+" 元");
         }
